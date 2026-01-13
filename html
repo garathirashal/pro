@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delicious Bites</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img id="header-img" src="restaurant.jpg" alt="Restaurant Banner" width="600">
+    <h1>Delicious Bites</h1>
+    <nav>
+      <h2><a href="#menu">Menu</a></h2>
+      <h2><a href="#order-form">Order Form</a></h2>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <article>
+        <img src="pizza.jpg" alt="Cheese Pizza" width="200">
+        <h3>Cheese Pizza</h3>
+        <p>A classic cheese pizza with fresh mozzarella and basil. <i>$10.99</i></p>
+      </article>
+
+      <article>
+        <img src="burger.jpg" alt="Veggie Burger" width="200">
+        <h3>Veggie Burger</h3>
+        <p>A hearty veggie burger served with lettuce and tomato. <i>$8.99</i></p>
+      </article>
+
+      <article>
+        <img src="pasta.jpg" alt="Pasta Alfredo" width="200">
+        <h3>Pasta Alfredo</h3>
+        <p>Creamy Alfredo pasta topped with parmesan cheese. <i>$12.50</i></p>
+      </article>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+      <form>
+        <!-- Number inputs for menu items -->
+        <label for="pizza">Cheese Pizza:</label>
+        <input type="number" id="pizza" name="pizza" min="0"><br><br>
+
+        <label for="burger">Veggie Burger:</label>
+        <input type="number" id="burger" name="burger" min="0"><br><br>
+
+        <label for="pasta">Pasta Alfredo:</label>
+        <input type="number" id="pasta" name="pasta" min="0"><br><br>
+
+        <!-- Sides / Add-ons -->
+        <p>Select your sides:</p>
+        <input type="checkbox" id="fries" name="sides" value="Fries">
+        <label for="fries">Fries</label><br>
+
+        <input type="checkbox" id="salad" name="sides" value="Salad">
+        <label for="salad">Salad</label><br>
+
+        <input type="checkbox" id="drink" name="sides" value="Drink">
+        <label for="drink">Soft Drink</label><br><br>
+
+        <!-- Special requests -->
+        <label for="requests">Special Requests:</label><br>
+        <textarea id="requests" name="requests" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Go To Checkout">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with love by Garathi</p>
+  </footer>
+
+</body>
+</html>
